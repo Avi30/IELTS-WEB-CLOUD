@@ -1,0 +1,109 @@
+/**
+  *
+  * main() will be run when you invoke this action
+  *
+  * @param Cloud Functions actions accept a single parameter, which must be a JSON object.
+  *
+  * @return The output of this action, which must be a JSON object.
+  *
+  */
+function main(params) {
+    returnString = '';
+
+    givenstate = params.state;
+    
+
+    // This section could be an API call, database call, etc.
+    switch(givenstate){
+        case 'Andhra Pradesh':
+            returnString = '8662410978';
+            break;
+        case 'Arunachal Pradesh':
+            returnString = '9436055743';
+            break;
+        case 'Assam':
+            returnString = '6913347770';
+            break;
+        case 'Bihar':
+            returnString = '104.';
+            break;
+        case 'Chhattisgarh':
+            returnString = '077122-35091';
+            break;
+        case 'Goa':
+            returnString = '104';
+            break;
+        case 'Gujarat':
+            returnString = '104';
+            break;
+        case 'Haryana':
+            returnString = '8558893911.';
+            break; 
+        case 'Himachal Pradesh':
+            returnString = '104.';
+            break;
+        case 'Jharkhand':
+            returnString = '104';
+            break;
+        case 'Karnataka':
+            returnString = '104';
+            break;
+        case 'Kerala':
+            returnString = '0471-2552056';
+            break;
+        case 'Madhya Pradesh':
+            returnString = '0755-2527177.';
+            break;
+        case 'Maharashtra':
+            returnString = '020-26127394';
+            break;
+        case 'Manipur':
+            returnString = '3852411668';
+            break;
+        case 'Meghalaya':
+            returnString = '108.';
+            break; 
+        case 'Mizoram':
+            returnString = '102.';
+            break;
+        case 'Nagaland':
+            returnString = '7005539653';
+            break;
+        case 'Odisha':
+            returnString = '9439994859';
+            break;
+        case 'Punjab':
+            returnString = '104';
+            break;
+        case 'Rajasthan':
+            returnString = '0141-2225624';
+            break; 
+        case 'Sikkim':
+            returnString = '104';
+            break;
+        case 'Tamil Nadu':
+            returnString = '044-29510500';
+            break; 
+        case 'Telangana':
+            returnString = '104.';
+            break;
+        case 'Tripura':
+            returnString = '0381-2315879';
+            break;
+        case 'Uttarakhand':
+            returnString = '104';
+            break;
+        case 'Uttar Pradesh':
+            returnString = '18001805145';
+            break;
+        case 'West Bengal':
+            returnString = '3323412600';
+            break;
+        default:
+            returnString = '**Please enter correct state of INDIA**';
+    }
+    //
+
+    let finalString = " --> " + returnString + " <-- ";
+	return { message: finalString };
+}
